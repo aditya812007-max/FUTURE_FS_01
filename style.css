@@ -1,28 +1,31 @@
-/* GLOBAL RESET - The most important part of CSS */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding doesn't make boxes wider */
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    
+    min-height: 100vh;      
+    display: flex;          
+    flex-direction: column; 
 }
 
-/* NAVIGATION */
+
 nav {
-    background-color: #1a1a1a; /* Dark Grey */
+    background-color: #1a1a1a; 
     color: white;
     padding: 1rem;
-    position: sticky; /* Sticks to top */
+    position: sticky; 
     top: 0;
 }
 
 nav ul {
     list-style: none;
-    display: flex; /* Flexbox - aligns items in a row */
+    display: flex; 
     justify-content: center;
     gap: 30px;
 }
@@ -33,9 +36,8 @@ nav a {
     font-weight: bold;
 }
 
-/* HERO SECTION */
 .hero {
-    height: 80vh; /* 80% of viewport height */
+    height: 80vh; 
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -55,11 +57,39 @@ nav a {
     color: #666;
 }
 
-/* FOOTER (The part I asked you to add) */
 footer {
     background-color: #1a1a1a;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: auto;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+.dark-mode .hero {
+    background-color: #1e1e1e;
+    border-bottom: 5px solid #1e1e1e;
+}
+
+.dark-mode .hero h1 {
+    color: white;
+}
+
+/* Button Styling (Optional but looks nice) */
+#theme-toggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
