@@ -19,5 +19,5 @@ This repository contains the source code for the tasks assigned during the Futur
 - **Tools:** VS Code, Git, GitHub
 
 ## 📬 Contact
-- **LinkedIn:** https://www.linkedin.com/in/aditya-biswal-b599a929a/
+- **LinkedIn:** https://www.linkedin.com/in/aditya-biswal
 - **Email:** aditya812007@gmail.com
