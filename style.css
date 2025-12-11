@@ -38,7 +38,8 @@ nav a {
 
 .hero {
     height: 80vh; 
-    background-color: #ffffff;
+    background-color: transparent
+    padding: 150px 20px;;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,9 +48,16 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
-    color: #333;
+    
+    /* THE MAGIC TRICK */
+    background: linear-gradient(90deg, #d47c6b, #7bc463);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hides the white text so the gradient shows */
+    
+    font-weight: 800; /* Make it thick */
 }
 
 .hero p {
@@ -66,22 +74,19 @@ footer {
 }
 
 
-.dark-mode {
-    background-color: #121212;
+body.dark-mode {
+    background-color: #050505;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
+    min-height: 100vh;
 }
 
 .dark-mode nav {
     background-color: #000;
-}
-
-.dark-mode .hero {
-    background-color: #1e1e1e;
-    border-bottom: 5px solid #1e1e1e;
-}
-
-.dark-mode .hero h1 {
-    color: white;
 }
 
 #theme-toggle {
@@ -132,7 +137,7 @@ section h2 {
 .dark-mode .skill-card {
     background: #333;
     color: white;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px rgba(192, 105, 229, 0.5);
 }
 
 /* CONTACT FORM STYLING */
@@ -153,19 +158,21 @@ section h2 {
     font-family: inherit;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #bb86fc; /* Purple accent */
-    color: white;
+button, .contact-form button {
+    background: linear-gradient(90deg, #bb86fc, #985eff);
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 50px; /* Capsule shape */
+    padding: 12px 30px;
     font-size: 1rem;
-    transition: background 0.3s;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(187, 134, 252, 0.4); /* Glowing Shadow */
+    transition: transform 0.2s;
 }
 
-.contact-form button:hover {
-    background-color: #9955e8; /* Darker purple on hover */
+button:hover {
+    transform: scale(1.05); /* Slightly grow on hover */
 }
 
 /* DARK MODE ADJUSTMENTS FOR FORM */
@@ -174,4 +181,49 @@ section h2 {
     background-color: #333;
     color: white;
     border: 1px solid #555;
+}
+
+/* GLASSMORPHISM CARD STYLE */
+.skill-card, 
+.contact-form, 
+#about {
+    background: rgba(255, 255, 255, 0.03); /* 3% White (See-through) */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* The Blur Effect */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Thin shiny border */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255,0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Soft shadow */
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT (Make them float) */
+.skill-card:hover {
+    transform: translateY(-10px); /* Move up */
+    box-shadow: 0 10px 40px rgba(187, 134, 252, 0.2); /* Purple Glow */
+    border-color: #bb86fc;
+}
+
+.glass-box {
+    padding: 60px;
+    background : rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border : 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.hero, .dark-mode .hero {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.hero h1, .dark-mode .hero h1 {
+    background: liners-gradient(90deg, #bb86fc, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
