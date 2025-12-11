@@ -227,3 +227,25 @@ button:hover {
     background-clip: text;
     color: transparent;
 }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    
+    /* 1. Shrink the big text */
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller than the desktop 3.5rem */
+    }
+
+    /* 2. Fix the cramped box padding */
+    .glass-box, section.container {
+        padding: 30px 20px; /* Less vertical padding, standard side padding */
+        width: 95%; /* Make the box fill more of the screen width */
+    }
+
+    /* 3. Stack the Navbar (Optional, if it looks squished) */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+}
