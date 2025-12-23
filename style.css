@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    
+    min-height: 100vh;      
+    display: flex;          
+    flex-direction: column; 
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    background-color: #1a1a1a; 
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 80vh; 
+    background-color: transparent;
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    
+    background: linear-gradient(90deg, #d47c6b, #7bc463);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+body.dark-mode {
+    background-color: #050505;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+#theme-toggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* SECTION STYLING */
+section.container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content */
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap to next line on mobile */
+    gap: 15px;
+}
+
+.skill-card {
+    background: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* DARK MODE ADJUSTMENTS FOR NEW SECTIONS */
+.dark-mode section h2 {
+    color: white;
+}
+
+.dark-mode .skill-card {
+    background: #333;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(192, 105, 229, 0.5);
+}
+
+/* CONTACT FORM STYLING */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto; /* Centers the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+button, .contact-form button {
+    background: linear-gradient(90deg, #bb86fc, #985eff);
+    border: none;
+    border-radius: 50px; /* Capsule shape */
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(187, 134, 252, 0.4); /* Glowing Shadow */
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+/* DARK MODE ADJUSTMENTS FOR FORM */
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* GLASSMORPHISM CARD STYLE */
+.skill-card, 
+.contact-form, 
+#about {
+    background: rgba(255, 255, 255, 0.03); /* 3% White (See-through) */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* The Blur Effect */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Thin shiny border */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255,0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Soft shadow */
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT (Make them float) */
+.skill-card:hover {
+    transform: translateY(-10px); /* Move up */
+    box-shadow: 0 10px 40px rgba(187, 134, 252, 0.2); /* Purple Glow */
+    border-color: #bb86fc;
+}
+
+.glass-box {
+    padding: 60px;
+    background : rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border : 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.hero, .dark-mode .hero {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.hero h1, .dark-mode .hero h1 {
+    background: liners-gradient(90deg, #bb86fc, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    
+    /* 1. Shrink the big text */
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller than the desktop 3.5rem */
+    }
+
+    /* 2. Fix the cramped box padding */
+    .glass-box, section.container {
+        padding: 30px 20px; /* Less vertical padding, standard side padding */
+        width: 95%; /* Make the box fill more of the screen width */
+    }
+
+    /* 3. Stack the Navbar (Optional, if it looks squished) */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 250px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    color: white;
+}
+
+#projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding : 20px;
+}
+
