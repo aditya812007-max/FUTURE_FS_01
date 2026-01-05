@@ -1,23 +1,32 @@
-# Future Interns - Full Stack Development Track
+# 🎨 Personal Portfolio Website
 
-**Intern:** Aditya Biswal  
-**ID:** FIT/DEC25/FS8327  
-**Track:** Full Stack Web Development (FS)
+Welcome to my personal portfolio! This project was built as **Task 1** of my 30-Day Full Stack Development Challenge. It serves as a digital resume to showcase my projects, skills, and contact information.
 
-## 📌 Repository Overview
-This repository contains the source code for the tasks assigned during the Future Interns Web Development Internship (December 2025).
+## 🚀 Live Demo : https://monumental-bunny-d8b305.netlify.app/
 
-## 📂 Project Structure
-| Task | Description | Status |
-|------|-------------|--------|
-| **Task 1** | Personal Portfolio Website | 🟢 Completed |
-| **Task 2** | Mini E-Commerce Store | 🟡 In Progress |
-| **Task 3** | AI Brand Redesign | 🔴 Pending |
+## 💻 Tech Stack
+* **HTML5:** Semantic structure and layout.
+* **CSS3:** Custom styling, Flexbox/Grid for responsiveness.
+* **JavaScript:** Interactivity (Mobile menu, smooth scrolling).
 
-## 🚀 Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **Tools:** VS Code, Git, GitHub
+## ✨ Key Features
+* **Responsive Design:** Fully adaptable layout that looks great on mobile, tablet, and desktop.
+* **Hero Section:** A visually engaging introduction with a call-to-action.
+* **Project Gallery:** A showcase of my recent work with links to my other projects and code.
+* **Contact Form:** A simple layout for potential clients or employers to reach out.
+* **Smooth Navigation:** fast and fluid user experience.
 
-## 📬 Contact
-- **LinkedIn:** https://www.linkedin.com/in/aditya-biswal
-- **Email:** aditya812007@gmail.com
+## 🛠️ How to Run Locally
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/aditya812007-max/portfolio-task.git](https://github.com/aditya812007-max/portfolio-task.git)
+    ```
+2.  Navigate to the folder:
+    ```bash
+    cd portfolio-task
+    ```
+3.  Open `index.html` in your browser.
+
+## 🤝 Connect
+* [LinkedIn](linkedin.com/in/aditya-biswal)
+* [GitHub](https://github.com/aditya812007-max)
