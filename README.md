@@ -1,6 +1,6 @@
 # 🎨 Personal Portfolio Website
 
-Welcome to my personal portfolio! This project was built as **Task 1** of my 30-Day Full Stack Development Challenge. It serves as a digital resume to showcase my projects, skills, and contact information.
+Welcome to my personal portfolio! This project was built as **Task 1** of my internship at FUTURE INTERNS. It serves as a digital resume to showcase my projects, skills, and contact information.
 
 ## 🚀 Live Demo : https://monumental-bunny-d8b305.netlify.app/
 
